@@ -6,31 +6,25 @@ body{
     
 }
 
-Headroom{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  
+.navbar{
+    display: flex;
 }
 .Movix{
     width: 100px;
     margin: 0 10px;
-    display: inline-block;
     color: lightcoral;
     font-size: 2em;
 }
 .search{
    
 }
-.nav{
-    display:flex;
-   flex-direction: row;
-   justify-self: flex-end;
-   align-items: center;
+.nav{   
+ display: flex;
+ align-items: flex-end;
+ text-decoration: none;
 }
 
 .nav li {
-   
     margin-right: 50px;
     margin-top: 10px;
 }
