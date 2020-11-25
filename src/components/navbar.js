@@ -3,19 +3,17 @@ import Headroom from 'react-headroom';
 
 
 const navbar = () => {
-    return <Headroom >
-        <div className="navbar">
+    return <div className="navbar">
             <p className="Movix">Movix</p>
-            <input className="search" type="text" />
-            <ul className="nav">
-                <li>Home</li>
-                <li>Movies</li>
-                <li>Series</li>
-                <li>My list</li>
-            </ul>
-        </div>
+                <input className="search" type="text" />
+                <ul className="navlinks">
+                    <li>Home</li>
+                    <li>Movies</li>
+                    <li>Series</li>
+                    <li>My list</li>
+                </ul>
 
-    </Headroom>;
+        </div>
 }
 
 export default navbar;

@@ -1,30 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    
-}
-
 .navbar{
     display: flex;
-}
-.Movix{
-    width: 100px;
-    margin: 0 10px;
-    color: lightcoral;
-    font-size: 2em;
+    flex-direction: row;
+    align-items: center;
 }
 .search{
-   
+    margin-left: auto;
 }
-.nav{   
- display: flex;
- align-items: flex-end;
- text-decoration: none;
+.navlinks{
+    display: flex;
+    list-style-type: none;
+    padding: 0px 15px;
 }
-
-.nav li {
-    margin-right: 50px;
-    margin-top: 10px;
+.navlinks li{
+    padding: 0;
+    margin-right: 20px;
 }
