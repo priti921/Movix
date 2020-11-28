@@ -1,20 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import Key from '../Key';
 import Axios from 'axios';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 function MovieSlider() {
     // api key 
-    // https://api.themoviedb.org/3/movie/550?api_key=53d5f666ce2f8beb85e15e9e4facf9ae
     const [Data, setData] = useState([]);
-    let requestData = async () => {
-        await Axios.get('https://api.themoviedb.org/3/movie/550?api_key=53d5f666ce2f8beb85e15e9e4facf9ae')
-            .then((res) => console.log(res))
-            .catch((err) => console.error(err))
-    }
-    requestData();
 
+
+    useEffect(() => {
+        const fetchData = async () => {
+            await Axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${Key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`)
+                .then((res) => setData(res.data.results.slice(0, 10)))
+                .catch((err) => console.error(err))
+        }
+        fetchData();
+
+    }, []);
+
+    let topMovies = Data ? (
+        Data.map((movie) => {
+            return (
+                <div className="movie" key={movie.id}>
+                    <li className="movie-title">{movie.title}</li>
+                    <img className="movie-poster" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
+                </div>
+            )
+        })
+    ) : (<p>Loading..</p>)
     return (
-        <div>
-            test
-        </div>
+        <AwesomeSlider>
+            {topMovies}
+        </AwesomeSlider>
     )
 }
 
