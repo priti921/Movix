@@ -1,6 +1,7 @@
 * {
-    background-color:#222831;
-    color: rgb(255, 255, 255);
+    color: white;
+    background-color: rgb(26, 25, 32);
+    
 }
 
 /* NAVBAR */
@@ -8,8 +9,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0px 15px;
-    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+    padding: 0px 15px;
+    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 .search {
     margin-left: auto;
@@ -36,9 +38,29 @@
 
 /* MOVIE SLIDER */
 
-.movie {
+.slider{
+    height: 40vw;
+    background-color: none;
     
 }
-.movie-poster{
-    object-fit: cover;
+
+
+.movie {
+  display: flex; 
 }
+
+.movie-details{
+    background-color: inherit;
+    list-style: none;
+
+}
+.movie-poster{
+    width: 25vw;
+    margin-left: 100px;
+    
+}
+
+.awssld__content{
+    --content-background-color: none;
+}
+
