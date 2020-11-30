@@ -1,7 +1,11 @@
 * {
     color: white;
-    background-color: rgb(26, 25, 32);
-    
+
+}
+/* The whole page */
+
+.App{
+   
 }
 
 /* NAVBAR */
@@ -10,8 +14,9 @@
     flex-direction: row;
     align-items: center;
     padding: 0px 15px;
-    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 2px rgba(255, 255, 255, 0.1) solid;
     background-color: rgba(0, 0, 0, 0.25);
+   
 }
 .search {
     margin-left: auto;
@@ -33,33 +38,57 @@
 .Movix {
     margin: 10px;
     font-size: 2em;
-    color: lightcoral;
+    color: rgb(255, 70, 70);
 }
 
 /* MOVIE SLIDER */
 
 .slider{
-    height: 40vw;
-    background-color: none;
-    
+    position: relative;
+    top: -65px;
+    z-index: 0;
+  
 }
 
 
 .movie {
-  display: flex; 
-}
-
-.movie-details{
-    background-color: inherit;
-    list-style: none;
-
-}
-.movie-poster{
-    width: 25vw;
-    margin-left: 100px;
+    
     
 }
+ .movie-poster{
+    width: 100vw;
+    
+}
+.movie .movie-details-bar{
+    display: flex;
+    position: relative;
+    top: -200px;
+    left: 100px;
+    font-size: 1.2em;
+    
+}
+.movie .movie-details-bar li{
+    margin: 0 15px;
+}
+ .movie .movie-details{
+    background-color: inherit;
+    list-style: none;
+    position: relative;
+    top: -300px; 
 
+}
+
+.movie .movie-details .movie-title {
+    font-size: 4em;
+    position: relative;
+    top: -70px;
+    font-weight: 400;
+}
+
+.movie .movie-details .movie-overview {
+    width: 50vw;
+}
+/* slider css */
 .awssld__content{
     --content-background-color: none;
 }
