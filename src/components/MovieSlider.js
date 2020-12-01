@@ -23,15 +23,17 @@ function MovieSlider() {
         Data.map((movie) => {
             return (
                 <div className="movie" key={movie.id}>
-                    <img className="movie-poster" src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={movie.title} />
+                    <div className="overlay">
+                        <img className="movie-poster" src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={movie.title} />
+                    </div>
                     <ul className="movie-details">
+                        <li className="movie-title">{movie.title}</li>
+                        <li className="movie-overview">{movie.overview}</li>
                         <div className="movie-details-bar">
                             <li className="movie-rating">{movie.vote_average}</li>
                             <li className="movie-genre">{movie.genre_ids}</li>
                             <li className="movie-release-year">{movie.release_date.slice(0, 4)}</li>
                         </div>
-                        <li className="movie-title">{movie.title}</li>
-                        <li className="movie-overview">{movie.overview}</li>
                     </ul>
                 </div>
             )
