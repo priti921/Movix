@@ -1,5 +1,6 @@
 * {
     color: white;
+    font-family: 'Montserrat', sans-serif;
 
 }
 /* The whole page */
@@ -16,6 +17,7 @@
     padding: 0px 15px;
     border-bottom: 2px rgba(255, 255, 255, 0.1) solid;
     background-color: rgba(0, 0, 0, 0.25);
+    height: 7vh;
    
 }
 .search {
@@ -39,6 +41,7 @@
     margin: 10px;
     font-size: 2em;
     color: rgb(255, 70, 70);
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* MOVIE SLIDER */
@@ -47,11 +50,13 @@
     position: relative;
     top: -65px;
     z-index: 0;
-  
+    height: 95vh;
 }
 
  .movie-poster{
     width: 100vw;
+    position: relative;
+    top: 70px;
     
 }
 /* created a container for overlay on image */
@@ -64,11 +69,12 @@
   background: linear-gradient(to bottom, rgba(0,0,0,0) 5%,rgba(0, 0, 0, 1) 100%); /* W3C */
 }
 
-
+/* movie detials */
 .movie .movie-details-bar{
     display: flex;
     position: relative;
     font-size: 1.2em;
+    top: 50px;
     
 }
 .movie .movie-details-bar li{
@@ -78,22 +84,38 @@
     background-color: inherit;
     list-style: none;
     position: relative;
-    top: -300px; 
+    top: -250px; 
 
 }
-
+.movie .movie-details-bar .star{
+    height: 20px;
+    width: 20px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 7px;
+    top: 1.5px;
+}
+.movie-genre , .movie-release-year{
+  list-style-type: disc;
+}
+/* movie-title */
 .movie .movie-details .movie-title {
     font-size: 4em;
+    font-weight: 100;
     position: relative;
     top: -70px;
-    font-weight: 400;
 }
-
+/* movie-overview */
 .movie .movie-details .movie-overview {
     width: 50vw;
 }
 /* slider css */
 .awssld__content{
     --content-background-color: none;
+}
+.awssld__bullets{
+    background-color: black;
+    padding-top:14px;
 }
 
