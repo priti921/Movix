@@ -56,7 +56,7 @@
  .movie-poster{
     width: 100vw;
     position: relative;
-    top: 70px;
+    top: 160px;
     
 }
 /* created a container for overlay on image */
@@ -143,5 +143,34 @@
 .awssld__bullets{
     background-color: black;
     padding-top:14px;
+    padding-bottom:14px;
+}
+
+/* trending now  */
+
+.trending-now{
+    background-color: black;
+    position: relative;    
+    top: -35px;
+    
+}
+.trending-now h2{
+    padding: 20px;
+    margin-left: 20px;
+    font-weight: 400;
+    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+}
+
+.trending-now .trending-now-movies{
+    margin: 50px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-template-rows: 300px;
+  grid-gap: 5px;
+}
+
+.trending-now .movie-card img{
+    height: 300px;
 }
 
