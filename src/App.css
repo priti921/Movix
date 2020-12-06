@@ -149,7 +149,7 @@
 /* trending now  */
 
 .trending-now{
-    background-color: black;
+    background-color: #0d1013;
     position: relative;    
     top: -35px;
     
@@ -162,15 +162,62 @@
 }
 
 .trending-now .trending-now-movies{
-    margin: 50px;
+  margin: 50px;
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-template-columns: repeat(6, minmax(170px, 1fr));
   grid-template-rows: 300px;
-  grid-gap: 5px;
+  grid-gap: 25px;
+  overflow: hidden;
+  
+}
+.trending-now .trending-now-movies-title {
+    font-size: 1em;
+    font-weight: 100;
+    margin-left: 55px;
+}
+/* cards */
+.trending-now .movie-card img{
+    height: 250px;
+    width: 180px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.9);
 }
 
-.trending-now .movie-card img{
-    height: 300px;
+.movie-card .movie-card-title{
+    list-style-type: none;
+    text-align: start;
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 5px;
+    /* pretents the line from expanding and adds ... at the end */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.movie-card-details{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3px;
+    padding-right: 10px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.movie-card-details  .movie-card-year{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.movie-card-details .movie-card-star{
+    color: rgba(255, 255, 0, 0.8);
+}
+.movie-card-details .movie-card-star-icon{
+    height: 1em;
+    position: relative;
+    left: 55px;
+    top: 1px;
+    color: rgba(255, 255, 0, 0.8);
 }
 
