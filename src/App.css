@@ -163,7 +163,9 @@
 
 .trending-now .trending-now-movies{
   margin: 50px;
-  margin-top: 30px;
+  margin: 30px;
+  padding: 10px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(6, minmax(170px, 1fr));
   grid-template-rows: 300px;
@@ -219,5 +221,13 @@
     left: 55px;
     top: 1px;
     color: rgba(255, 255, 0, 0.8);
+}
+/* card hover effects */
+
+.movie-card img:hover{
+    filter: blur(1.1px);
+    background-clip: padding-box;
+    transform: scale(1.1, 1.12);
+    transition: transform  400ms ease-in-out;
 }
 

@@ -34,7 +34,7 @@ function TrendsNow() {
     //    TRENDING MOVIES
     let trendingMovies = Data ? (
         Data.map((trending) => {
-            return <div className="movie-card">
+            return <div className="movie-card" key={trending.id}>
                 <img className="movie-card-poster" src={`https://image.tmdb.org/t/p/original/${trending.poster_path}`} alt={trending.title} />
                 <li className="movie-card-title">{trending.title}</li>
                 <ul className="movie-card-details">
@@ -49,7 +49,7 @@ function TrendsNow() {
     // TRENDING TV SERIES
     let trendingSeries = DataSeries ? (
         DataSeries.map((series) => {
-            return <div className="movie-card">
+            return <div className="movie-card" key={series.id}>
                 <img src={`https://image.tmdb.org/t/p/original/${series.poster_path}`} alt={series.title} className="movie-card-poster" />
                 <li className="movie-card-title">{series.name}</li>
                 <ul className="movie-card-details">
