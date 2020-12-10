@@ -156,16 +156,15 @@
 }
 .trending-now h2{
     padding: 20px;
-    margin-left: 20px;
+    padding-top: 50px;
+    margin: 20px 40px 0px 40px;
     font-weight: 400;
-    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+    border-bottom: 3px rgba(255, 255, 255, 0.1) solid;
 }
 
 .trending-now .trending-now-movies{
-  margin: 50px;
-  margin: 30px;
+  margin: 20px 50px 0 50px;
   padding: 10px;
-  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(6, minmax(170px, 1fr));
   grid-template-rows: 300px;
@@ -177,6 +176,7 @@
     font-size: 1em;
     font-weight: 100;
     margin-left: 55px;
+    margin-top: 50px;
 }
 /* cards */
 .trending-now .movie-card img{
@@ -229,5 +229,10 @@
     background-clip: padding-box;
     transform: scale(1.1, 1.12);
     transition: transform  400ms ease-in-out;
+}
+
+.popular-now{
+    position: relative;
+    top: -55px;
 }
 

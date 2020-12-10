@@ -29,7 +29,6 @@ function TrendsNow() {
 
 
     }, []);
-    console.log(DataSeries);
 
     //    TRENDING MOVIES
     let trendingMovies = Data ? (

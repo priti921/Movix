@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/navbar';
 import MovieSlider from './components/MovieSlider';
 import TrendingNow from './components/TrendsNow';
+import PopularNow from './components/PopularNow';
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       </header>
       <MovieSlider />
       <TrendingNow />
+      <PopularNow />
     </div>
   );
 }
