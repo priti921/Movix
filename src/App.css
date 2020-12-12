@@ -236,3 +236,62 @@
     top: -55px;
 }
 
+/* about */
+.about-info {
+    background-color: #13161a;
+    position: relative;
+    /* by applying a negative margin that equals the width or height of the element get rid of white space  */
+    margin-top: -65px;
+    padding: 20px 0 0px 0;
+}
+
+.logo-and-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-logo{
+    margin: auto;
+}
+
+.logo-and-table > p {
+    font-weight: 100;
+}
+
+.about-table {
+    margin: auto;
+    padding: 10px;
+}
+
+.about-table > th,td{
+    font-size: .8em;
+    padding: 10px;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.418);
+}
+
+.about-table th{
+    font-size: .9em;
+    color: rgba(255, 255, 255, 0.678);
+    text-align: start;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.copyright{
+    margin: 0;
+    padding: 10px 0 0 0;
+    text-align: center;
+    font-size: .7em;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
