@@ -238,10 +238,15 @@
     transform: scale(1.1, 1.12);
     transition: transform  400ms ease-in-out;
 }
-
+/* componet */
 .popular-now{
     position: relative;
     top: -55px;
+}
+
+.top-rated {
+    position: relative;;
+    top: -75px;
 }
 
 /* about */
@@ -249,7 +254,7 @@
     background-color: #13161a;
     position: relative;
     /* by applying a negative margin that equals the width or height of the element get rid of white space  */
-    margin-top: -65px;
+    margin-top: -75px;
     padding: 20px 0 0px 0;
 }
 
