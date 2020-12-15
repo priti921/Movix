@@ -1,22 +1,28 @@
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //components
 import Navbar from './components/navbar';
-import MovieSlider from './components/MovieSlider';
-import TrendingNow from './components/TrendsNow';
-import PopularNow from './components/PopularNow';
-import About from './components/about';
+import Home from './page/Home'
+import Movies from './page/Movies';
+import Series from './page/Series';
+
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
-      </header>
-      <MovieSlider />
-      <TrendingNow />
-      <PopularNow />
-      <About />
-    </div>
+    <Router>
+
+      <div className="App">
+        <header className="App-header">
+          <Navbar />
+        </header>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/Movies" exact component={Movies} />
+          <Route path="/Series" exact component={Series} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

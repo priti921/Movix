@@ -32,12 +32,18 @@
     display: flex;
     list-style-type: none;
     padding: 0 10px 0 20px;
+    
 }
 .navlinks li {
     padding: 0 20px 0 20px;
     margin-right: 10px;
     font-weight: 100;
     
+    
+}
+
+.navlinks li a {
+    text-decoration: none;
 }
 .Movix {
     margin: 10px;
@@ -289,6 +295,13 @@
     font-weight: 100;
 }
 
+.movies-page {
+    color: black;
+}
+
+.series-page {
+    color: black;
+}
 
 
 
