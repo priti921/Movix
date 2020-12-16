@@ -6,6 +6,7 @@ import About from '../components/about';
 import PopularMovies from '../components/Movies/PopularMovies';
 import TrendingMovies from '../components/Movies/TrendingMovies';
 import TopratedMovies from '../components/Movies/TopratedMovies';
+import UpcomingMovies from '../components/Movies/UpcomingMovies';
 function Movies() {
     return (
         <div className="movies-page">
@@ -13,6 +14,7 @@ function Movies() {
             <PopularMovies />
             <TrendingMovies />
             <TopratedMovies />
+            <UpcomingMovies />
             <About />
         </div>
     )

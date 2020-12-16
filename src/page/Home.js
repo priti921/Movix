@@ -7,6 +7,7 @@ import TopRated from '../components/TopRated';
 import About from '../components/about';
 import Upcoming from '../components/Upcoming';
 
+
 function Home() {
     return (
         <>

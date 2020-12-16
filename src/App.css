@@ -331,6 +331,10 @@
 
 .toprated-movies {
     margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.upcoming-movies {
     margin-bottom: 60px;
 }
 

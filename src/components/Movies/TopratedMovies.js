@@ -11,7 +11,7 @@ function PopularMovies() {
     useEffect(() => {
         const fetchData = async () => {
             // api call for popular movies 
-            await Axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${Key}&language=en-US&page=18`)
+            await Axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${Key}&language=en-US&page=1`)
                 .then((res) => setData(res.data.results.slice(0, 18)))
                 .catch((err) => console.error((err)))
 
