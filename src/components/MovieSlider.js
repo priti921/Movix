@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import Key from '../Key';
 import Axios from 'axios';
-import AwesomeSlider from 'react-awesome-slider';
+import AwesomeSlider from 'react-awesome-slider'
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
+
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
+
 function MovieSlider() {
     // top movies right now data
     const [Data, setData] = useState([]);
@@ -23,10 +28,15 @@ function MovieSlider() {
                         .catch((err) => console.error(err))
                 })
                 .catch((err) => console.error(err))
+
+
+
         }
         fetchData();
 
     }, []);
+
+
 
 
     let topMovies = Loading ? (<div className="loading">Loading...</div>) : (
@@ -79,9 +89,14 @@ function MovieSlider() {
 
             { Loading ? (<div className="loading" > Loading...</div>) : (
 
-                <AwesomeSlider className="slider">
+                <AutoplaySlider className="slider"
+                    play={true}
+                    cancelOnInteraction={true} // should stop playing on user interaction
+                    interval={100}
+                    infinite={true}
+                >
                     {topMovies}
-                </AwesomeSlider>
+                </AutoplaySlider>
             )
             }
         </>
