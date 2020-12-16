@@ -16,11 +16,11 @@ function PopularNow() {
     useEffect(() => {
         const fetchData = async () => {
             // api call for popular movies 
-            await Axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=53d5f666ce2f8beb85e15e9e4facf9ae&language=en-US&page=12`)
+            await Axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${Key}&language=en-US&page=12`)
                 .then((res) => setData(res.data.results.slice(0, 12)))
                 .catch((err) => console.error((err)))
             // api call for popular
-            await Axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=${Key}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false`)
+            await Axios.get(`https://api.themoviedb.org/3/tv/top_rated?api_key=${Key}&language=en-US&page=1`)
                 .then((res) => setDataSeries(res.data.results.slice(0, 12)))
                 .catch((err) => console.error(err))
 

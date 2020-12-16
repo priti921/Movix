@@ -18,6 +18,7 @@
     border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
     background-color: rgba(0, 0, 0, 0.25);
     height: 7vh;
+    backdrop-filter: blur(2px);
    
 }
 .search {
@@ -249,12 +250,16 @@
     top: -75px;
 }
 
+.upcoming {
+    position: relative;
+    top: -95px;
+}
 /* about */
 .about-info {
     background-color: #13161a;
     position: relative;
     /* by applying a negative margin that equals the width or height of the element get rid of white space  */
-    margin-top: -75px;
+    margin-top: -95px;
     padding: 20px 0 0px 0;
 }
 
@@ -308,7 +313,26 @@
     color: black;
 }
 
+/* movies page */
+/* black box */
+.black-box{
+    height: 50px;
+    display: block;
+    background-color: black;
+    position: relative;
+    top: -50px;
+    /* gets rid of white space caused by moving item relatively  */
+    margin-bottom: -35px;
+}
 
+.popular-movies {
+    margin-bottom: -20px;
+} 
+
+.toprated-movies {
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
 
 
 

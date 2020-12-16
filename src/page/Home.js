@@ -5,6 +5,7 @@ import TrendingNow from '../components/TrendsNow';
 import PopularNow from '../components/PopularNow';
 import TopRated from '../components/TopRated';
 import About from '../components/about';
+import Upcoming from '../components/Upcoming';
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <TrendingNow />
             <PopularNow />
             <TopRated />
+            <Upcoming />
             <About />
         </>
     )
