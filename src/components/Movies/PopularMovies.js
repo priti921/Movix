@@ -6,6 +6,7 @@ import Key from '../../Key';
 function PopularMovies() {
     // data
     const [Data, setData] = useState([])
+    const [Loading, setLoading] = useState(true);
 
     // called once
     useEffect(() => {
@@ -13,6 +14,7 @@ function PopularMovies() {
             // api call for popular movies 
             await Axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${Key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`)
                 .then((res) => setData(res.data.results.slice(0, 18)))
+                .then(() => setLoading(false))
                 .catch((err) => console.error((err)))
 
         }
@@ -21,7 +23,7 @@ function PopularMovies() {
     }, []);
 
     // Popular movies mapping
-    let PopularMovies = Data ? (
+    let PopularMovies = Loading ? (<div className="loading">Loading...</div>) : (
         Data.map((movie) => {
             return <div className="movie-card" key={movie.id}>
                 <img className="movie-card-poster" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
@@ -34,7 +36,7 @@ function PopularMovies() {
                 </ul>
             </div>
         })
-    ) : (<p>Loading..</p>)
+    )
     return (
         <div className="trending-now popular-movies">
             <h2 className="treding-now-title">Popular now</h2>

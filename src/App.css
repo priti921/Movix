@@ -5,8 +5,27 @@
 }
 /* The whole page */
 
-.App{
-   
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* NAVBAR */
@@ -234,7 +253,6 @@
 /* card hover effects */
 
 .movie-card img:hover{
-    filter: blur(1.1px);
     background-clip: padding-box;
     transform: scale(1.1, 1.12);
     transition: transform  400ms ease-in-out;
@@ -246,7 +264,7 @@
 }
 
 .top-rated {
-    position: relative;;
+    position: relative;
     top: -75px;
 }
 

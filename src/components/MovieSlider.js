@@ -8,6 +8,7 @@ function MovieSlider() {
     const [Data, setData] = useState([]);
     // genre id and names
     const [Genre, setGenre] = useState([]);
+    const [Loading, setLoading] = useState(true);
     useEffect(() => {
         const fetchData = async () => {
             // calling api for getting popular movies
@@ -18,6 +19,7 @@ function MovieSlider() {
                     // calling api for getting genre 
                     Axios.get(`https://api.themoviedb.org/3/genre/movie/list?api_key=${Key}&language=en-US`)
                         .then((res) => setGenre(res.data.genres))
+                        .then(() => setLoading(false))
                         .catch((err) => console.error(err))
                 })
                 .catch((err) => console.error(err))
@@ -27,7 +29,7 @@ function MovieSlider() {
     }, []);
 
 
-    let topMovies = Data ? (
+    let topMovies = Loading ? (<div className="loading">Loading...</div>) : (
         Data.map((movie) => {
 
 
@@ -69,13 +71,20 @@ function MovieSlider() {
                 </div >
             )
         })
-    ) : (<p>Loading..</p>)
+    )
 
 
     return (
-        <AwesomeSlider className="slider">
-            {topMovies}
-        </AwesomeSlider>
+        <>
+
+            { Loading ? (<div className="loading" > Loading...</div>) : (
+
+                <AwesomeSlider className="slider">
+                    {topMovies}
+                </AwesomeSlider>
+            )
+            }
+        </>
     )
 }
 

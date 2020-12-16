@@ -10,6 +10,7 @@ function TrendsNow() {
     // movie data collected from api call
     const [Data, setData] = useState([])
     const [DataSeries, setDataSeries] = useState([]);
+    const [Loading, setLoading] = useState(true);
 
 
     // called once 
@@ -18,6 +19,7 @@ function TrendsNow() {
             // api call for trending movies 
             await Axios.get(`https://api.themoviedb.org/3/trending/movie/week?api_key=${Key}`)
                 .then((res) => setData(res.data.results.slice(0, 12)))
+                .then(() => setLoading(false))
                 .catch((err) => console.error((err)))
             await Axios.get(`https://api.themoviedb.org/3/trending/tv/week?api_key=${Key}`)
                 .then((res) => setDataSeries(res.data.results.slice(0, 12)))
@@ -31,7 +33,7 @@ function TrendsNow() {
     }, []);
 
     //    TRENDING MOVIES
-    let trendingMovies = Data ? (
+    let trendingMovies = Loading ? (<div className="loading">Loading...</div>) : (
         Data.map((trending) => {
             return <div className="movie-card" key={trending.id}>
                 <img className="movie-card-poster" src={`https://image.tmdb.org/t/p/original/${trending.poster_path}`} alt={trending.title} />
@@ -44,7 +46,7 @@ function TrendsNow() {
                 </ul>
             </div>
         })
-    ) : (<p>Loading...</p>)
+    )
     // TRENDING TV SERIES
     let trendingSeries = DataSeries ? (
         DataSeries.map((series) => {

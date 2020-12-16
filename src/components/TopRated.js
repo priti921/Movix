@@ -10,7 +10,7 @@ function PopularNow() {
     // movie data collected from api call
     const [Data, setData] = useState([])
     const [DataSeries, setDataSeries] = useState([]);
-
+    const [Loading, setLoading] = useState(true);
 
     // called once 
     useEffect(() => {
@@ -18,6 +18,7 @@ function PopularNow() {
             // api call for popular movies 
             await Axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${Key}&language=en-US&page=1`)
                 .then((res) => setData(res.data.results.slice(0, 12)))
+                .then(() => setLoading(false))
                 .catch((err) => console.error((err)))
             // api call for popular
             await Axios.get(`https://api.themoviedb.org/3/tv/top_rated?api_key=${Key}&language=en-US&page=1`)
@@ -32,7 +33,7 @@ function PopularNow() {
     }, []);
 
     //    TRENDING MOVIES
-    let trendingMovies = Data ? (
+    let trendingMovies = Loading ? (<div className="loading">Loading...</div>) : (
         Data.map((trending) => {
             return <div className="movie-card" key={trending.id}>
                 <img className="movie-card-poster" src={`https://image.tmdb.org/t/p/original/${trending.poster_path}`} alt={trending.title} />
@@ -45,7 +46,7 @@ function PopularNow() {
                 </ul>
             </div>
         })
-    ) : (<p>Loading...</p>)
+    )
     // TRENDING TV SERIES
     let trendingSeries = DataSeries ? (
         DataSeries.map((series) => {

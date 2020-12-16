@@ -8,7 +8,8 @@ import Key from '../Key';
 
 function Upcoming() {
     // movie data collected from api call
-    const [Data, setData] = useState([])
+    const [Data, setData] = useState([]);
+    const [Loading, setLoading] = useState(true);
 
 
     // called once 
@@ -17,6 +18,7 @@ function Upcoming() {
             // api call for popular movies 
             await Axios.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=${Key}&language=en-US&page=1`)
                 .then((res) => setData(res.data.results.slice(0, 12)))
+                .then(() => setLoading(false))
                 .catch((err) => console.error((err)))
 
 
@@ -27,7 +29,7 @@ function Upcoming() {
     }, []);
 
     //    TRENDING MOVIES
-    let trendingMovies = Data ? (
+    let trendingMovies = Loading ? (<div className="loading">Loading...</div>) : (
         Data.map((trending) => {
             return <div className="movie-card" key={trending.id}>
                 <img className="movie-card-poster" src={`https://image.tmdb.org/t/p/original/${trending.poster_path}`} alt={trending.title} />
@@ -40,7 +42,7 @@ function Upcoming() {
                 </ul>
             </div>
         })
-    ) : (<p>Loading...</p>)
+    )
     // TRENDING TV SERIES
 
     return (
