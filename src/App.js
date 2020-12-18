@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import Home from './page/Home'
 import Movies from './page/Movies';
 import Series from './page/Series';
+import MovieDetails from './components/MovieDetails';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         </header>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/movie/:id" component={MovieDetails} />
           <Route path="/Movies" exact component={Movies} />
           <Route path="/Series" exact component={Series} />
         </Switch>

@@ -1,6 +1,7 @@
 * {
     color: white;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 
 }
 /* The whole page */
@@ -191,6 +192,7 @@
     margin: 20px 40px 0px 40px;
     font-weight: 400;
     border-bottom: 3px rgba(255, 255, 255, 0.1) solid;
+    color: rgb(255, 70, 70)
 }
 
 .trending-now .trending-now-movies{
@@ -362,6 +364,10 @@
 /* series page */
 .toprated-tv-series {
     margin-bottom: 60px;
+}
+
+.movie-details-page{
+
 }
 
 
