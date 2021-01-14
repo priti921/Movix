@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/movix/static/css/main.33c26357.chunk.css",
+    "main.js": "/movix/static/js/main.bc2ce4a6.chunk.js",
+    "main.js.map": "/movix/static/js/main.bc2ce4a6.chunk.js.map",
+    "runtime-main.js": "/movix/static/js/runtime-main.b580598e.js",
+    "runtime-main.js.map": "/movix/static/js/runtime-main.b580598e.js.map",
+    "static/css/2.34b29efe.chunk.css": "/movix/static/css/2.34b29efe.chunk.css",
+    "static/js/2.e60d25bf.chunk.js": "/movix/static/js/2.e60d25bf.chunk.js",
+    "static/js/2.e60d25bf.chunk.js.map": "/movix/static/js/2.e60d25bf.chunk.js.map",
+    "static/js/3.8cf48387.chunk.js": "/movix/static/js/3.8cf48387.chunk.js",
+    "static/js/3.8cf48387.chunk.js.map": "/movix/static/js/3.8cf48387.chunk.js.map",
+    "index.html": "/movix/index.html",
+    "static/css/2.34b29efe.chunk.css.map": "/movix/static/css/2.34b29efe.chunk.css.map",
+    "static/css/main.33c26357.chunk.css.map": "/movix/static/css/main.33c26357.chunk.css.map",
+    "static/js/2.e60d25bf.chunk.js.LICENSE.txt": "/movix/static/js/2.e60d25bf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b580598e.js",
+    "static/css/2.34b29efe.chunk.css",
+    "static/js/2.e60d25bf.chunk.js",
+    "static/css/main.33c26357.chunk.css",
+    "static/js/main.bc2ce4a6.chunk.js"
+  ]
+}
