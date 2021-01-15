@@ -11,7 +11,7 @@ const navbar = () => {
     return (
         <Headroom>
             <div className="navbar">
-                <p className="Movix"><Link to="/">Movix</Link></p>
+                <p className="Movix"><Link to="/movix">Movix</Link></p>
                 <input className="search" type="text" />
                 <ul className="navlinks">
                     <li><Link to="/movix">Home</Link></li>
