@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/movix/static/css/main.33c26357.chunk.css",
-    "main.js": "/movix/static/js/main.64c05ed9.chunk.js",
-    "main.js.map": "/movix/static/js/main.64c05ed9.chunk.js.map",
+    "main.css": "/movix/static/css/main.aee122c7.chunk.css",
+    "main.js": "/movix/static/js/main.7e8198ba.chunk.js",
+    "main.js.map": "/movix/static/js/main.7e8198ba.chunk.js.map",
     "runtime-main.js": "/movix/static/js/runtime-main.b580598e.js",
     "runtime-main.js.map": "/movix/static/js/runtime-main.b580598e.js.map",
     "static/css/2.34b29efe.chunk.css": "/movix/static/css/2.34b29efe.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.8cf48387.chunk.js.map": "/movix/static/js/3.8cf48387.chunk.js.map",
     "index.html": "/movix/index.html",
     "static/css/2.34b29efe.chunk.css.map": "/movix/static/css/2.34b29efe.chunk.css.map",
-    "static/css/main.33c26357.chunk.css.map": "/movix/static/css/main.33c26357.chunk.css.map",
+    "static/css/main.aee122c7.chunk.css.map": "/movix/static/css/main.aee122c7.chunk.css.map",
     "static/js/2.e60d25bf.chunk.js.LICENSE.txt": "/movix/static/js/2.e60d25bf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b580598e.js",
     "static/css/2.34b29efe.chunk.css",
     "static/js/2.e60d25bf.chunk.js",
-    "static/css/main.33c26357.chunk.css",
-    "static/js/main.64c05ed9.chunk.js"
+    "static/css/main.aee122c7.chunk.css",
+    "static/js/main.7e8198ba.chunk.js"
   ]
 }
