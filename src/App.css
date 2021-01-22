@@ -375,8 +375,7 @@
     position: relative;
     width: 99vw;
     height: 100vh;
-    top: -50px; 
-    margin-top: -30px;
+    top: -50px;
     /* z-index: 0; */
     
 }
@@ -397,6 +396,7 @@
 
     position: relative;
     top: -30px;
+    margin-left: -15px;
 
 }
 .movie-page-data li{
@@ -417,6 +417,7 @@
     padding: 0;
     position: relative;
     left: -20px;
+    top: -2.5px;
 
 }
 
@@ -429,18 +430,20 @@
     top: -70px;
 }
 .movie-page-tagline{
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: 1px;
     font-size: 100;
     position: relative;
     top: -65px;
-    left: 10px;
+    margin-left: 5px;
+    text-transform: lowercase;
 }
 
 .movie-page-overview{
     width: 50vw;
     padding: 0;
     margin: 0;
+    margin-left: 5px;
 }
 
 
