@@ -368,6 +368,7 @@
 
 /* movie details page */
 .movie-details-page{
+
 }
 
 
@@ -376,7 +377,6 @@
     width: 99vw;
     height: 100vh;
     top: -50px;
-    /* z-index: 0; */
     
 }
 
@@ -384,8 +384,8 @@
 
 .movie-details-details{
     position: relative;
-    top: -300px;
     list-style-type: none;
+    margin-top: -300px;
 }
 
 
@@ -446,7 +446,10 @@
     margin-left: 5px;
 }
 
-
+.similer-movies{
+    position: relative;
+    top: 45px;
+}
 
 
 
