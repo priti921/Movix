@@ -75,7 +75,7 @@ function MovieSlider() {
                             <li className="movie-release-year">{movie.release_date.slice(0, 4)}</li>
                         </div>
                         <div className="watch-movie-buttons">
-                            <button>Watch</button>
+                            <button className="watch-button">Watch</button>
                         </div>
                     </ul>
                 </div >
