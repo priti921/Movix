@@ -1,25 +1,15 @@
 {
   "files": {
-    "main.css": "/movix/static/css/main.04eb5c23.chunk.css",
-    "main.js": "/movix/static/js/main.d3793d7d.chunk.js",
-    "main.js.map": "/movix/static/js/main.d3793d7d.chunk.js.map",
-    "runtime-main.js": "/movix/static/js/runtime-main.b580598e.js",
-    "runtime-main.js.map": "/movix/static/js/runtime-main.b580598e.js.map",
-    "static/css/2.34b29efe.chunk.css": "/movix/static/css/2.34b29efe.chunk.css",
-    "static/js/2.cb867d30.chunk.js": "/movix/static/js/2.cb867d30.chunk.js",
-    "static/js/2.cb867d30.chunk.js.map": "/movix/static/js/2.cb867d30.chunk.js.map",
-    "static/js/3.8cf48387.chunk.js": "/movix/static/js/3.8cf48387.chunk.js",
-    "static/js/3.8cf48387.chunk.js.map": "/movix/static/js/3.8cf48387.chunk.js.map",
+    "main.css": "/movix/static/css/main.00764f6d.css",
+    "main.js": "/movix/static/js/main.3915c6cc.js",
+    "static/js/377.46772801.chunk.js": "/movix/static/js/377.46772801.chunk.js",
     "index.html": "/movix/index.html",
-    "static/css/2.34b29efe.chunk.css.map": "/movix/static/css/2.34b29efe.chunk.css.map",
-    "static/css/main.04eb5c23.chunk.css.map": "/movix/static/css/main.04eb5c23.chunk.css.map",
-    "static/js/2.cb867d30.chunk.js.LICENSE.txt": "/movix/static/js/2.cb867d30.chunk.js.LICENSE.txt"
+    "main.00764f6d.css.map": "/movix/static/css/main.00764f6d.css.map",
+    "main.3915c6cc.js.map": "/movix/static/js/main.3915c6cc.js.map",
+    "377.46772801.chunk.js.map": "/movix/static/js/377.46772801.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b580598e.js",
-    "static/css/2.34b29efe.chunk.css",
-    "static/js/2.cb867d30.chunk.js",
-    "static/css/main.04eb5c23.chunk.css",
-    "static/js/main.d3793d7d.chunk.js"
+    "static/css/main.00764f6d.css",
+    "static/js/main.3915c6cc.js"
   ]
 }
