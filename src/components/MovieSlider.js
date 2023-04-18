@@ -34,7 +34,7 @@ function MovieSlider() {
         }
         fetchData();
 
-    }, []);
+    }, [Data]);
 
 
 

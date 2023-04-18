@@ -20,7 +20,7 @@ function TrendingSeries() {
         }
         fetchData();
         console.log(Data);
-    }, []);
+    }, [Data]);
 
     // Popular movies mapping
     let PopularMovies = Loading ? (<div className="loading">Loading...</div>) : (
